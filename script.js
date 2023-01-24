@@ -7,6 +7,7 @@ const btn = document.querySelectorAll(".btn");
 const cardBtn = document.querySelector(".card__btn");
 const span = document.querySelector("span");
 
+console.log(btn[1].value);
 // Блок выставления оценок
 
 // event handler должен взять текст, который в кнопке
@@ -17,7 +18,7 @@ const span = document.querySelector("span");
 
 btn.forEach((item) => {
   item.addEventListener("click", () => {
-    span.innerText = item.innerText;
+    span.innerText = item.value;
   });
 });
 
@@ -31,7 +32,6 @@ btn.forEach((item) => {
 submitBtn.addEventListener("click", function () {
   for (let i = 0; i < card.length; i++) {
     card[i].classList.toggle("hidden");
-    // return card;
   }
   cardBtn.classList.add("hidden");
 });

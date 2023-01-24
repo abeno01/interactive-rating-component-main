@@ -87,7 +87,7 @@ body {
 
 /* BUTTONS */
 
-.buttons {
+.card__form-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,5 +147,5 @@ body {
 }
 
 .mbottom {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
