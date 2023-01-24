@@ -68,9 +68,7 @@ select {
   }
 }
 
-/*
-  8. Avoid text overflows
-*/
+/*Avoid text overflows*/
 p,
 h1,
 h2,
