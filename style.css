@@ -10,32 +10,34 @@
   --ff-base: "Overpass", sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
+
+  --fs-1: 1rem;
+  --fs-2: 1.25rem;
+  --fs-3: 1.563rem;
+  --fs-4: 1.953rem;
+  --fs-5: 2.441rem;
+
+  /* - Mobile: 375px
+- Desktop: 1440px */
 }
 
 body {
-  font-family: var(--ff-base);
-  background-color: var(--clr-body-bg);
-  color: var(--clr-neutral-grey);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+
+  font-family: var(--ff-base);
+  background-color: var(--clr-body-bg);
+  color: var(--clr-neutral-grey);
 }
 
 /* блок */
 .card {
   background-color: var(--clr-card-bg);
-  width: min(90%, 300px);
-  height: 300px;
-  padding: 2rem;
+  width: min(90%, 330px);
+  aspect-ratio: 1 / 1.1;
+  padding: 2.5rem;
   border-radius: 15px;
-}
-
-.card__base {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .card__form {
@@ -46,43 +48,28 @@ body {
 }
 
 .center {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
 }
 
 .img-star {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   background-color: var(--clr-dark-grey);
-  aspect-ratio: 1 / 1;
   width: fit-content;
   padding: 1rem;
 }
 
-.img {
-  display: flex;
-  justify-content: center;
-
-  width: max-content;
-  align-self: center;
-}
-
-.thanks-img,
-.star {
-  width: 80%;
-}
-
 .card__title {
-  font-size: 2rem;
+  font-size: var(--fs-5);
   color: var(--clr-neutral-white);
   letter-spacing: 0.7px;
 }
 
 .card__text {
-  font-size: 1.1rem;
+  font-size: var(--fs-2);
 }
 
 /* BUTTONS */
@@ -95,7 +82,7 @@ body {
 
 .btn {
   color: var(--clr-neutral-grey);
-  font-size: 1.3rem;
+  font-size: var(--fs-3);
   font-weight: var(--fw-bold);
   border: none;
   background-color: var(--clr-dark-grey);
@@ -104,6 +91,7 @@ body {
   height: 4rem;
   text-decoration: none;
   transition: 0.1s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -117,15 +105,17 @@ body {
 }
 
 .card__btn {
+  font-size: var(--fs-3);
   letter-spacing: 2px;
   text-transform: uppercase;
-  height: 4rem;
+  height: 5rem;
   border: none;
   border-radius: 3rem;
   background-color: var(--clr-primary);
   color: var(--clr-neutral-white);
   font-weight: var(--fw-bold);
-  transition: 0.1s;
+  transition: 0.3s ease-in;
+  cursor: pointer;
 }
 
 .card__btn:hover,
@@ -139,13 +129,19 @@ body {
 }
 
 .card__message {
+  letter-spacing: 0.5px;
+  font-size: var(--fs-2);
   background-color: var(--clr-dark-grey);
-  border-radius: 1rem;
+  border-radius: 2rem;
   font-weight: var(--fw-bold);
   color: var(--clr-primary);
   padding: 0.3rem 1rem;
 }
 
-.mbottom {
+.img-star,
+.card__title,
+.card__text,
+.img,
+.card__message {
   margin-bottom: 2rem;
 }
