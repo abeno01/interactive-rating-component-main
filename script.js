@@ -1,13 +1,12 @@
 "use strict";
 
-// Assigning variables
+// Variables
 const submitBtn = document.querySelector(".card__btn");
 const card = document.querySelectorAll(".card__base");
 const btn = document.querySelectorAll(".btn");
 const cardBtn = document.querySelector(".card__btn");
 const span = document.querySelector("span");
 
-console.log(btn[1].value);
 // Блок выставления оценок
 
 // event handler должен взять текст, который в кнопке
