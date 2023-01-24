@@ -114,7 +114,7 @@ body {
   background-color: var(--clr-primary);
   color: var(--clr-neutral-white);
   font-weight: var(--fw-bold);
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
   cursor: pointer;
 }
 
